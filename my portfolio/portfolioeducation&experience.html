@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    padding: 35px 10%;
+}
+.container{
+    padding-right: calc(10%-30px);
+}
+main.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.col header.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+    padding:  0px 0px 20px 30px;
+
+}
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid orangered;
+}
+.col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 8px solid whitesmoke;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 3px solid transparent;
+}
+.col .contents .box::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right:calc(100% + 28px);
+    top: 0;
+    background-color:orangered;
+    border: 2px solid white;
+}
+.box h4{
+    position: relative;
+    color: orangered;
+}
+.box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+.box p{
+    line-height: 1.2;
+    color: #666;
+    font-size: 17px;
+}
+@media(max-width:768px){
+    main.row{
+        grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+        margin-top: 30px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <main class="row">
+            <!-- education -->
+            <section class="col">
+                <header class="title">
+                    <h2>EDUCATION</h2>
+                </header>
+                <div class="contents">
+                    <div class="box">
+                        <h4>2007-2008</h4>
+                        <h3>S.S.L.C</h3>
+                        <p>O.C.P.M GIRLS HIGHER SECONDARY SCHOOL</p>
+                    </div>
+                    <div class="box">
+                        <h4>2008-2009</h4>
+                        <h3>H.S.C</h3>
+                        <p>MAHATMA MONTESSORI MATRICULATION HIGHER SECONDARY SCHOOL</p>
+                    </div>
+                    <div class="box">
+                        <h4>2010-2013</h4>
+                        <h3>BACHELORE OF COMMERCE (COMPUTER APPLICATIONS)</h3>
+                        <p>LADY DOAK COLLEGE ,MADURAI</p>
+                    </div>
+                    <div class="box">
+                        <h4>2013-2015</h4>
+                        <h3>MASTER OF BUSINESS ADMINISTRATION(FINANCE AND HUMAN RESOURCES)</h3>
+                        <p>SATHYABAMA UNIVERSITY ,CHENNAI</p>
+                    </div>
+                </div>
+            </section>
+            <!-- EXPERIENCE -->
+            <section class="col">
+                <header class="title">
+                    <h2>EXPERIENCE</h2>
+                </header>
+                <div class="contents">
+                    <div class="box">
+                        <h4>2020-2024</h4>
+                        <h3>ACCOUNT SPECIALIST</h3>
+                        <p> *managing vendors accounts
+                            *preparing financial statements
+                            *reporting
+                            *accounts payable and receivable
+                            *preparing Gst &Esi&Epf
+                            *invoicing and Tax preparation</p>
+                    </div>
+                    <div class="box">
+                        <h4>2024</h4>
+                        <h3>AWS (INTERNSHIP)</h3>
+                        <p> * EC2 *VPC
+                            *S3* IAM *SES *SNS *Cloud Watch* EBS
+                            *EFS *SQS* Elastic Load Balancer* Auto Scaling
+                            RDS s *AWS CLI *Cloud Trail
+                            *Cloud Front* Route 53* Github </p>
+                    </div>
+                    <div class="box">
+                        <h4>2024</h4>
+                        <h3>FULL STACK DEVELOPER(trainee)</h3>
+                        <p>*HTML*CSS*JAVASCRIPT*PYTHON </p>
+                </div>
+    </div>
+    </section>
+
+
+
+
+    </main>
+    </div>
+</body>
+
+</html>
